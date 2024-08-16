@@ -1,0 +1,30 @@
+/*    header    */
+.header {
+    background-color: var(--main-clr);
+}
+
+.header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    height: 96px;
+}
+
+.header img {
+    width: 54px;
+    border-radius: 50%;
+    object-fit: none;
+}
+
+.header ul {
+    display: flex;
+    justify-content: space-between;
+    width: 290px;
+}
+
+.header a {
+    text-decoration: none;
+    color: white;
+    padding: 0.5em 1em;
+}
