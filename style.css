@@ -34,19 +34,19 @@ li {
 .about p {
 	font-size: 1.5em;
 	text-align: center;
+	max-width: 800px;
+	margin: auto;
 }
 
 .contact_container {
 	display: flex;
-	justify-content: space-around;
-}
-
-.contact_container form {
-	max-width: 50%;
+	flex-direction: column;
+	/* justify-content: space-around; */
 }
 
 .contact_container iframe {
-	max-width: 50%;
+	max-width: 100%;
+	padding-top: 1em;
 }
 
 /*  formulaire  */
@@ -55,4 +55,18 @@ form input {
 	width: 100%;
 	padding: 0.5em;
 	margin-bottom: 0.8em;
+}
+
+@media only screen and (min-width: 580px) {
+	.contact_container {
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	.contact_container form {
+		max-width: 50%;
+	}
+	.contact_container iframe {
+		max-width: 50%;
+		padding-top: 0;
+	}
 }
