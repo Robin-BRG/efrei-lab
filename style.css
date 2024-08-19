@@ -4,6 +4,7 @@
 @import "./css/mainSection.css";
 @import "./css/featuresSection.css";
 @import "./css/footer.css";
+@import "./css/mediaQueries.css";
 
 ul,
 li {
