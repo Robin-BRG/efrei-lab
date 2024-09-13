@@ -27,8 +27,10 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 1em;
 	height: 80px;
+	position: sticky;
+	top: 0;
+	z-index: 1000; /* Assurez-vous que la navbar reste au-dessus des autres éléments */
 }
 
 .header .header_logo {
@@ -46,7 +48,7 @@
 	width: 290px;
 	position: fixed;
 	width: 100%;
-	height: 0;
+	height: 100%;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -91,4 +93,11 @@
 .header .active {
 	background-color: var(--main-clr);
 	border-radius: var(--border-radius);
+	height: 80px;
+}
+
+
+.header a:hover {
+	background-color: white;
+	color: var(--main-clr);
 }
